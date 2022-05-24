@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="FR-fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ma Carte</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Benjamin Verhaeghe">
+    <meta name="description" content="Réaliser votre carte de visite avec CSS et Javascript">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Ma Carte</h1>
+    </header>
+    <main>
+      <div id="partie1">
+        <div id="formulaire">
+          <form action="index.html" method="post" onsubmit="return false">
+            <p class="formSpace">Civilité :</p>
+            <input type="radio" name="madame" value="Mme" />
+            <label for="madame">Madame</label>
+            <input class="formRadio" type="radio" name="monsieur" value="Mr" />
+            <label for="monsieur">Monsieur</label>
+            <input class="formRadio" type="radio" name="none" value="" />
+            <label for="none">Ne rien mettre</label>
+            <br>
+            <label class="blockMq" for="prenom">Prénom :</label>
+            <input type="text" name="prenom" value="" required/>
+            <label for="nom" class="formSpace2 blockMq">Nom :</label>
+            <input type="text" name="nom" value="" required/>
+            <p class="formSpace"></p>
+            <label class="blockMq" for="email">E-mail :</label>
+            <input type="email" id="email" name="email" required />
+            <label for="phone" class="formSpace2 blockMq">Téléphone :</label>
+            <input type="tel" id="phone" name="phone" required />
+            <br>
+            <label for="adresse">Votre adresse :</label>
+            <br class="formSpace">
+            <textarea name="adresse" rows="2" cols="60"></textarea>
+            <br>
+            <input class="btnForm" type="submit" name="send" value="Valider" />
+            <input class="btnForm" type="reset" value="Annuler" />
+          </form>
+        </div>
+        <div id="maCarte">
+
+        </div>
+      </div>
+        <div id="partie2">
+          <div id="custom1">
+            <h2>Couleur arrière-plan :</h2>
+            <div id="greyBg">
+              <button type="button" name="button1" id="grey1" class="btnColor"></button>
+              <button type="button" name="button2" id="grey2" class="btnColor"></button>
+              <button type="button" name="button3" id="grey3" class="btnColor"></button>
+              <button type="button" name="button4" id="grey4" class="btnColor"></button>
+              <button type="button" name="button5" id="grey5" class="btnColor"></button>
+            </div>
+            <div id="colorBg">
+              <button type="button" name="button6" id="color1" class="btnColor"></button>
+              <button type="button" name="button7" id="color2" class="btnColor"></button>
+              <button type="button" name="button8" id="color3" class="btnColor"></button>
+              <button type="button" name="button9" id="color4" class="btnColor"></button>
+              <button type="button" name="button10" id="color5" class="btnColor"></button>
+            </div>
+          </div>
+          <div id="custom2">
+            <h2>Couleur liseré :</h2>
+            <div id="greyBg">
+              <button type="button" name="button11" id="grey6" class="btnColor"></button>
+              <button type="button" name="button12" id="grey7" class="btnColor"></button>
+              <button type="button" name="button13" id="grey8" class="btnColor"></button>
+              <button type="button" name="button14" id="grey9" class="btnColor"></button>
+              <button type="button" name="button15" id="grey10" class="btnColor"></button>
+            </div>
+            <div id="colorBg">
+              <button type="button" name="button16" id="color6" class="btnColor"></button>
+              <button type="button" name="button17" id="color7" class="btnColor"></button>
+              <button type="button" name="button18" id="color8" class="btnColor"></button>
+              <button type="button" name="button19" id="color9" class="btnColor"></button>
+              <button type="button" name="button20" id="color10" class="btnColor"></button>
+            </div>
+          </div>
+        </div>
+        <div id="partie3">
+          <div id="custom3">
+            <h2>Couleur police d'écriture :</h2>
+            <div id="greyBg">
+              <button type="button" name="button21" id="grey11" class="btnColor"></button>
+              <button type="button" name="button22" id="grey12" class="btnColor"></button>
+              <button type="button" name="button23" id="grey13" class="btnColor"></button>
+              <button type="button" name="button24" id="grey14" class="btnColor"></button>
+              <button type="button" name="button25" id="grey15" class="btnColor"></button>
+            </div>
+            <div id="colorBg">
+              <button type="button" name="button26" id="color11" class="btnColor"></button>
+              <button type="button" name="button27" id="color12" class="btnColor"></button>
+              <button type="button" name="button28" id="color13" class="btnColor"></button>
+              <button type="button" name="button29" id="color14" class="btnColor"></button>
+              <button type="button" name="button30" id="color15" class="btnColor"></button>
+            </div>
+          </div>
+          <div id="custom4">
+            <h2>Police d'écriture :</h2>
+            <div id="fontsChoise">
+              <button type="button" name="button31" id="font1" class="btnFont">El Messiri</button>
+              <button type="button" name="button32" id="font2" class="btnFont">Jakarta</button>
+              <button type="button" name="button33" id="font3" class="btnFont">Verdana</button>
+              <button type="button" name="button34" id="font4" class="btnFont">Helvetica</button>
+              <button type="button" name="button35" id="font5" class="btnFont">Serif</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Réaliser par <a href="https://www.bencreaweb.fr">Benjamin Verhaeghe</a> - Créer ma carte de visite avec HTML, CSS et JavaScript</p>
+    </footer>
+  <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
