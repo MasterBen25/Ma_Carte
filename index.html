@@ -13,15 +13,20 @@
       <h1>Ma Carte</h1>
     </header>
     <main>
+      <div id="intro">
+        <p>Bienvenue sur <span class="brand">Ma Carte</span>, ici créer votre propre carte de visite, choisissez la couleur de fond, du liseré et du texte, choisissez également la police d'écriture.
+          Après ça on s'occupe du reste, de l'impression à la livraison en moins de 48h*</p>
+        <p id="smallInfo">* Livraison en moins de 48 heures disponible dans les villes de : Paris et île de France, Lyon, Toulouse, Marseille, Nantes, Bordeaux, Lille, Strasbourg, Grenoble et Rennes.</p>
+      </div>
       <div id="partie1">
         <div id="formulaire">
           <form action="index.html" method="post" onsubmit="return false">
             <p class="formSpace">Civilité :</p>
-            <input type="radio" name="madame" value="Mme" />
+            <input type="radio" name="genre" value="Mme" />
             <label for="madame">Madame</label>
-            <input class="formRadio" type="radio" name="monsieur" value="Mr" />
+            <input class="formRadio" type="radio" name="genre" value="Mr" />
             <label for="monsieur">Monsieur</label>
-            <input class="formRadio" type="radio" name="none" value="" />
+            <input class="formRadio" type="radio" name="genre" value="" />
             <label for="none">Ne rien mettre</label>
             <br>
             <label class="blockMq" for="prenom">Prénom :</label>
@@ -43,12 +48,23 @@
           </form>
         </div>
         <div id="maCarte">
-
+          <div id="lisere">
+            <div id="nameCard">
+              <p class="colorTextCard sizeGenreCard">Mme</p>
+              <p class="colorTextCard sizeNameCard mlText">Nom</p>
+              <p class="colorTextCard sizeNameCard mlText">Prénom</p>
+            </div>
+            <div id="infoCard">
+              <p class="colorTextCard sizeInfoCard">contact@ma-carte.com</p>
+              <p class="colorTextCard sizeInfoCard">09 10 20 30 40</p>
+              <p class="colorTextCard sizeInfoCard">30 avenue de la fôret</p>
+            </div>
+          </div>
         </div>
       </div>
         <div id="partie2">
           <div id="custom1">
-            <h2>Couleur arrière-plan :</h2>
+            <h3>Couleur arrière-plan :</h2>
             <div id="greyBg">
               <button type="button" name="button1" id="grey1" class="btnColor"></button>
               <button type="button" name="button2" id="grey2" class="btnColor"></button>
@@ -65,7 +81,7 @@
             </div>
           </div>
           <div id="custom2">
-            <h2>Couleur liseré :</h2>
+            <h3>Couleur liseré :</h2>
             <div id="greyBg">
               <button type="button" name="button11" id="grey6" class="btnColor"></button>
               <button type="button" name="button12" id="grey7" class="btnColor"></button>
@@ -84,7 +100,7 @@
         </div>
         <div id="partie3">
           <div id="custom3">
-            <h2>Couleur police d'écriture :</h2>
+            <h3>Couleur police d'écriture :</h2>
             <div id="greyBg">
               <button type="button" name="button21" id="grey11" class="btnColor"></button>
               <button type="button" name="button22" id="grey12" class="btnColor"></button>
@@ -101,7 +117,7 @@
             </div>
           </div>
           <div id="custom4">
-            <h2>Police d'écriture :</h2>
+            <h3>Police d'écriture :</h2>
             <div id="fontsChoise">
               <button type="button" name="button31" id="font1" class="btnFont">El Messiri</button>
               <button type="button" name="button32" id="font2" class="btnFont">Jakarta</button>
@@ -110,6 +126,9 @@
               <button type="button" name="button35" id="font5" class="btnFont">Serif</button>
             </div>
           </div>
+        </div>
+        <div id="partie4">
+
         </div>
       </div>
     </main>
