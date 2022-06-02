@@ -104,6 +104,9 @@ p, a, input, label {
   font-family: 'ElMessiriRegular'!important;
   font-size: 1.4rem !important;
 }
+.red {
+  color: #FF0000 !important;
+}
 /*_______________________ Custom CSS ___________________________*/
 
 #intro {
