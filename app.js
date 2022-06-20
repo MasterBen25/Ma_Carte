@@ -1,4 +1,4 @@
-//Recuperer information formulaire
+//Variable recuperer information formulaire
 
 const civi = document.querySelector('input[name="genre"]:checked');
 const nom = document.querySelector('input[name="nom"]');
@@ -8,7 +8,7 @@ const phone = document.querySelector('input[name="phone"]');
 const adress = document.querySelector('textarea[name="adresse"]');
 const send = document.querySelector('input[name="send"]');
 
-//Valeur changement Couleur
+//Variable changement Couleur
 
 const grey1 = document.querySelector("#grey1");
 const grey2 = document.querySelector("#grey2");
@@ -42,6 +42,27 @@ const color14 = document.querySelector("#color14");
 const color15 = document.querySelector("#color15");
 const lisere = document.querySelector("#lisere");
 const bgCarte = document.querySelector("#maCarte");
+
+//Variable police ecriture
+
+const messiri = document.querySelector("#font1");
+const jakarta = document.querySelector("#font2");
+const verdana = document.querySelector("#font3");
+const helvetica = document.querySelector("#font4");
+const serif = document.querySelector("#font5");
+
+//variable quantiter carte
+
+const plus = document.querySelector("#buttonP");
+const moins = document.querySelector("#buttonM");
+let valButt = document.querySelector(".valeurButt");
+let valButt3 = document.querySelector(".valeurButt3");
+val = 10;
+
+//variable pop up thanks
+
+const openPop = document.querySelector("#openPopUp");
+const closePop = document.querySelector("#closePopUp");
 
 //Fonction implementer information sur carte
 
@@ -213,4 +234,79 @@ color15.addEventListener("click", function() {
   document.querySelector("#emailArea").style.color = "#C69B7B";
   document.querySelector("#phoneArea").style.color = "#C69B7B";
   document.querySelector("#adressArea").style.color = "#C69B7B";
+})
+
+//Fonction changer police ecriture carte
+
+messiri.addEventListener("click", function() {
+  document.querySelector("#civi").style.fontFamily = "ElMessiriRegular";
+  document.querySelector("#nom").style.fontFamily = "ElMessiriRegular";
+  document.querySelector("#prenom").style.fontFamily = "ElMessiriRegular";
+  document.querySelector("#emailArea").style.fontFamily = "ElMessiriRegular";
+  document.querySelector("#phoneArea").style.fontFamily = "ElMessiriRegular";
+  document.querySelector("#adressArea").style.fontFamily = "ElMessiriRegular";
+})
+jakarta.addEventListener("click", function() {
+  document.querySelector("#civi").style.fontFamily = "PlusJakartaSansRegular";
+  document.querySelector("#nom").style.fontFamily = "PlusJakartaSansRegular";
+  document.querySelector("#prenom").style.fontFamily = "PlusJakartaSansRegular";
+  document.querySelector("#emailArea").style.fontFamily = "PlusJakartaSansRegular";
+  document.querySelector("#phoneArea").style.fontFamily = "PlusJakartaSansRegular";
+  document.querySelector("#adressArea").style.fontFamily = "PlusJakartaSansRegular";
+})
+verdana.addEventListener("click", function() {
+  document.querySelector("#civi").style.fontFamily = "verdana";
+  document.querySelector("#nom").style.fontFamily = "verdana";
+  document.querySelector("#prenom").style.fontFamily = "verdana";
+  document.querySelector("#emailArea").style.fontFamily = "verdana";
+  document.querySelector("#phoneArea").style.fontFamily = "verdana";
+  document.querySelector("#adressArea").style.fontFamily = "verdana";
+})
+helvetica.addEventListener("click", function() {
+  document.querySelector("#civi").style.fontFamily = "helvetica";
+  document.querySelector("#nom").style.fontFamily = "helvetica";
+  document.querySelector("#prenom").style.fontFamily = "helvetica";
+  document.querySelector("#emailArea").style.fontFamily = "helvetica";
+  document.querySelector("#phoneArea").style.fontFamily = "helvetica";
+  document.querySelector("#adressArea").style.fontFamily = "helvetica";
+})
+serif.addEventListener("click", function() {
+  document.querySelector("#civi").style.fontFamily = "serif";
+  document.querySelector("#nom").style.fontFamily = "serif";
+  document.querySelector("#prenom").style.fontFamily = "serif";
+  document.querySelector("#emailArea").style.fontFamily = "serif";
+  document.querySelector("#phoneArea").style.fontFamily = "serif";
+  document.querySelector("#adressArea").style.fontFamily = "serif";
+})
+
+//Fonction quantiter carte
+
+plus.addEventListener("click", function () {
+  if (val < 100) {
+    val = val + 10;
+    valButt.innerHTML = val;
+  }
+  else {
+    valButt.innerHTML = 100;
+  }
+  valButt3.innerHTML = val * 0.5;
+})
+moins.addEventListener("click", function () {
+  if (val > 10) {
+    val = val - 10;
+    valButt.innerHTML = val;
+  }
+  else {
+    valButt.innerHTML = 10;
+  }
+  valButt3.innerHTML = val * 0.5;
+})
+
+//Fonction pop up
+
+openPop.addEventListener("click", function () {
+  document.querySelector("#popUpThanks").style.display = "block";
+})
+closePop.addEventListener("click", function () {
+  document.querySelector("#popUpThanks").style.display = "none";
 })
