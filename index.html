@@ -18,6 +18,20 @@
           Après ça on s'occupe du reste, de l'impression à la livraison en moins de 48h*</p>
         <p id="smallInfo">* Livraison en moins de 48 heures disponible dans les villes de : Paris et île de France, Lyon, Toulouse, Marseille, Nantes, Bordeaux, Lille, Strasbourg, Grenoble et Rennes.</p>
       </div>
+      <div id="etapeCarte">
+        <div class="lesEtapes">
+          <p><span class="numEtape">Étape 1 : </span>Rentrer vos informations sur le formulaire puis cliquez sur Valider</p>
+        </div>
+        <div class="lesEtapes">
+          <p><span class="numEtape">Étape 2 : </span>Choisissez la combinaison de couleur que vous souhaitez appliquer sur votre carte</p>
+        </div>
+        <div class="lesEtapes">
+          <p><span class="numEtape">Étape 3 : </span>Choisissez la police d'écriture parmi le choix proposer, par défaut la police d'écriture est Jakarta</p>
+        </div>
+        <div class="lesEtapes">
+          <p><span class="numEtape">Étape 4 : </span>Choisissez la quantité de carte que vous souhaitez commander</p>
+        </div>
+      </div>
       <div id="partie1">
         <div id="formulaire">
           <form action="index.html" method="post" onsubmit="return false">
@@ -64,7 +78,7 @@
       </div>
         <div id="partie2">
           <div id="custom1">
-            <h3>Couleur arrière-plan :</h2>
+            <h3>Couleur arrière-plan :</h3>
             <div id="greyBg">
               <button type="button" name="button1" id="grey1" class="btnColor"></button>
               <button type="button" name="button2" id="grey2" class="btnColor"></button>
@@ -81,7 +95,7 @@
             </div>
           </div>
           <div id="custom2">
-            <h3>Couleur liseré :</h2>
+            <h3>Couleur liseré :</h3>
             <div id="greyBg">
               <button type="button" name="button11" id="grey6" class="btnColor"></button>
               <button type="button" name="button12" id="grey7" class="btnColor"></button>
@@ -100,7 +114,7 @@
         </div>
         <div id="partie3">
           <div id="custom3">
-            <h3>Couleur police d'écriture :</h2>
+            <h3>Couleur police d'écriture :</h3>
             <div id="greyBg">
               <button type="button" name="button21" id="grey11" class="btnColor"></button>
               <button type="button" name="button22" id="grey12" class="btnColor"></button>
@@ -117,7 +131,7 @@
             </div>
           </div>
           <div id="custom4">
-            <h3>Police d'écriture :</h2>
+            <h3>Police d'écriture :</h3>
             <div id="fontsChoise">
               <button type="button" name="button31" id="font1" class="btnFont">El Messiri</button>
               <button type="button" name="button32" id="font2" class="btnFont">Jakarta</button>
@@ -128,7 +142,37 @@
           </div>
         </div>
         <div id="partie4">
-
+          <div class="partie4Sub">
+            <h3>Quantité de cartes :</h3>
+            <div id="valCarte">
+              <p class="valeurButt">10</p>
+              <p>cartes</p>
+            </div>
+            <div id="quantCarte">
+              <button type="button" id="buttonM">-</button>
+              <button type="button" id="buttonP">+</button>
+            </div>
+            <p class="infoQuantCarte">Entre 10 et 100 cartes au maximum</p>
+          </div>
+          <div class="partie4Sub2">
+            <h3>Total :</h3>
+            <div id="totalCarte" >
+              <p class="valeurButt3">5</p>
+              <p>&nbsp;euros</p>
+            </div>
+          </div>
+        </div>
+        <div id="validCommand">
+          <p>Veuillez entrer ci-dessous l'adresse e-mail vers laquelle vous serez envoyer le récapitulatif de votre commande ainsi qu'un lien vers la passerelle de paiement ( carte bancaire, chèque ou Paypal ).</p>
+          <div id="commandButt">
+            <input type="email" name="emailCommand" value="">
+            <button type="button" name="buttonCommand" id="openPopUp">Envoyer</button>
+          </div>
+        </div>
+        <div id="popUpThanks">
+          <h4>Merci d'avoir utilisé le site fictif <span class="brand h4">Ma&nbsp;Carte</span></h4>
+          <p>J'ai réalisé ce site principalement comme exercice sur Javascript, avec la récupération d'information sur un formulaire, modifier les éléments du DOM et opérer des calculs simples.</p>
+          <button type="button" name="buttonOk" id="closePopUp">OK</button>
         </div>
       </div>
     </main>
